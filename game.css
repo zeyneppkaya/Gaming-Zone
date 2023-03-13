@@ -1,0 +1,322 @@
+* {
+  transition: .3s;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: .3s;
+}
+
+body {
+  margin: 0;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #0B090A;
+}
+
+nav {
+  position: relative;
+  background-color: #323334;
+  overflow: hidden;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  /* box-shadow: 0 0 24px rgba(68, 66, 67, 0.5); */
+}
+
+.game-logo {
+  max-width: 80px;
+  display: flex;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.left {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  float: left;
+}
+
+.right {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  display: flex;
+}
+
+nav li a {
+  display: block;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+nav li a:hover {
+  color: #A4161A;
+  font-size: 20px;
+  font-weight: bold;
+  transform: scale(1.07);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+main hr {
+  max-width: 80%;
+  opacity: 0.4;
+}
+
+.search-bar {
+  padding: 50px 0 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  max-width: 1600px;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+input[type=text] {
+  align-items: center;
+  background: rgb(32, 32, 32);
+  border-radius: 24px;
+  display: flex;
+  height: 40px;
+  margin: 8px 0;
+  min-width: 230px;
+  width: 230px;
+  font: inherit;
+  color: inherit;
+}
+
+input::placeholder {
+  color: white;
+
+}
+
+input[name="search"] {
+  color: white;
+  padding: 0 20px 0 20px;
+  border: none;
+}
+
+.search {
+  display: flex;
+}
+
+.search img {
+  max-width: 20px;
+}
+
+.search button {
+  padding: 0 0 0 20px;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  position: relative;
+  color: rgba(245, 245, 245, 0.6);
+}
+
+.games-display {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin-left: 10%;
+  margin-right: auto;
+  width: 78%;
+  max-width: 1600px;
+  display: flex;
+  /* flex-direction: column; */
+  height: 100%;
+  justify-content: space-between;
+}
+
+.picture-container {
+  position: relative;
+}
+
+.picture-container .game-pics {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 30px;
+  border: solid 6px #0B090A;
+  box-shadow: 0 0 36px rgba(134, 134, 134, 0.118);
+}
+
+.picture-container .hl-logo {
+  cursor: pointer;
+  position: absolute;
+  max-width: 40%;
+  top: 180px;
+  left: 10px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.picture-container .hl-logo:hover {
+  transform: scale(1.07);
+}
+
+.picture-container h4,
+h3,
+.price,
+.ca,
+.buy-now button {
+  position: absolute;
+  font-size: 20px;
+  top: 300px;
+  left: 30px;
+  width: 100%;
+  color: white;
+}
+
+.picture-container .out-now {
+  font-family: 'Sarabun', sans-serif;
+  font-style: italic;
+}
+
+.picture-container h3 {
+  display: flex;
+  top: 350px;
+  left: 30px;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+}
+
+.picture-container .price {
+  top: 390px;
+  left: 30px;
+  padding-top: 10px;
+}
+
+.price .sale {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.picture-container .price span {
+  font-style: italic;
+}
+
+.picture-container .ca {
+  top: 430px;
+  left: 30px;
+}
+
+.picture-container button {
+  cursor: pointer;
+  top: 460px;
+  width: 150px;
+  height: 60px;
+  left: 30px;
+  background-color: #f9fbfb4a;
+  border-radius: 20px;
+  border: none;
+}
+
+.game-container {
+  /* padding-left: 20px; */
+}
+
+.game-container .minimized-games {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.minimized-games .mini-hogwarts, .mini-fortnite, .mini-valorant, .mini-sonsofforest {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  padding: 14px;
+  background-color: #78767660;
+  transition: 0.3s;
+}
+
+.minimized-games .mini-hogwarts:hover, .mini-fortnite:hover, .mini-valorant:hover, .mini-sonsofforest:hover {
+  background-color: #78767686;
+  transform: scale(1.04);
+}
+
+.mini-hogwarts img, 
+.mini-fortnite img,
+.mini-sonsofforest img {
+  border-radius: 10px;
+} 
+
+.minimized-games .mini-hogwarts h5, .mini-fortnite h5, .mini-valorant h5, .mini-sonsofforest h5 {
+  color: white;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.footer-container {
+  padding: 20px 0;
+  background-color: #323334;
+  color: #D3D3D3;
+  box-shadow: 0 0 12px rgba(68, 66, 67, 0.5);
+}
+
+.footer-container ul,
+address {
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container address {
+  flex-direction: column;
+}
+
+.footer-container li {
+  padding: 0 10px;
+}
+
+.footer-container ul a,
+address,
+address a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-container ul a:hover,
+address:hover,
+address a:hover {
+  opacity: 1;
+}
+
+.footer-container .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #787676;
+  margin-bottom: 0;
+}
