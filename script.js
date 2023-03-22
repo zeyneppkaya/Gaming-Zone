@@ -31,3 +31,4 @@ function logoResizer (maxWidth) {
 function buyButton(text) {
     $buyButton.textContent = text
 }
+
