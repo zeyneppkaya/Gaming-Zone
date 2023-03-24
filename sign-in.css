@@ -3,6 +3,15 @@ body {
     
 }
 
+.sign_in-out {
+    border: transparent;
+    background-color: transparent;
+    font-size: 18px;
+    color: #FFF;
+    margin: 1em;
+    font-weight: bold;
+}
+
 .login-page {
     font-family: 'Sarabun', sans-serif;
     display: flex;
