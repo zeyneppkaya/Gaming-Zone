@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Camilo Cardona Posada">
+    <meta name="email" content="card0219@algonquinlive.com">
+    <meta name="date" content="2023-03-20">
+    <link rel="stylesheet" href="news.css">
+    <title>News API Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Sarabun:ital,wght@0,400;0,500;0,600;0,800;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="game.html"><img class="game-logo" src="pics/1.jpg" alt="game logo"></a>
+            <ol class="nav-bar">
+                <ul class="left">
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <ul class="right">
+                    <li>
+                        <hr>
+                        <form id="in-out" action="sign-in.html">
+                            <input type="submit" id="inOutBtn" class="sign_in-out" value="Sign In">
+                        </form>
+                    </li>
+                </ul>
+            </ol>
+        </nav>
+    </header>
+    <section class="search-bar">
+        <form class="search" action="">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit"><img src="pics/search-3-xxl.png" alt=""></button>
+        </form>
+        <form action="" class="filter">
+            <label for="dateFrom">From</label>
+            <input type="date" id="dateFrom" name="dateFrom">
+            <label for="dateTo">To</label>
+            <input type="date" id="dateTo" name="dateTo"> 
+        </form>
+    </section>
+    <section class="container">
+    </section>
+    <footer class="footer-container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">Services</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <address id="contact">
+            <h4>1195 Benton Street Kitchener, Ontario <a href="tel://1613748321">+1 613 748 321</a></h4>
+            <a href="mailto:gamingzone@gamingzone.ca?subject=Hi Mama's Bakery & body=">gamingzone@gamingzone.ca</a>
+        </address>
+        <p class="copyright">© 2023, Gaming Zone, Inc. All rights reserved.</p>
+    </footer>
+    <script src="localStorage.js"></script>
+<script src="news.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@ const $inOut = document.getElementById('inOutBtn')
 if ($signIn) {
     $signIn.addEventListener("submit", function () {
         const email = document.getElementById('email').value
-        const password = document.getElementById('password').value
+        const password = document.getElementById('password').value  
        
         window.localStorage.setItem('email', email)
         window.localStorage.setItem('password', password)
