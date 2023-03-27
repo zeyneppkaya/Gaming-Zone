@@ -109,7 +109,33 @@ input[type=text] {
     font: inherit;
     color: inherit;
 }
-  
+
+input[type=date], select {
+    background: rgb(32, 32, 32);
+    border-radius: 24px;
+    height: 40px;
+    margin: 8px 0;
+    min-width: 230px;
+    width: 230px;
+    font: inherit;
+    color: white;
+    padding: 0 20px 0 20px;
+    border: none;
+}
+
+label {
+    color: white;
+    font: inherit;
+}
+
+.filter {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    align-items: center;
+
+}
+
 input::placeholder {
     color: white;
   
@@ -123,6 +149,7 @@ input[name="search"] {
 
 .search {
     display: flex;
+    align-items: center;
 }
   
 .search img {
@@ -186,32 +213,22 @@ input[name="search"] {
     font-size: 13px;
     color: #787676;
     margin-bottom: 0;
+  }
 
-
-/* .container {
+.news-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-form {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-label {
-    padding-bottom: 10px;
-    font-size: 36px;
 }
 
 .meta {
     font-size: 24px;
     width: 100%;
     text-align: center;
+    color: white;
 }
 
-img {
+a img {
     width: 100%;
 
 }
@@ -219,14 +236,23 @@ img {
 .box {
     width: 40%;
     margin: 0 1% 1% 1%;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .description {
     text-align: center;
+    color: white;
 }
 
-input[type=submit] {
-    margin-top: 10px;
+ hr {
+    max-width: 80%;
+    opacity: 0.4;
     margin-bottom: 10px;
-} */
+  }
+  
+.drop-down {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
