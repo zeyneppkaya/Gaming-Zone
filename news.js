@@ -54,8 +54,8 @@ function fetchNews (url) {
   fetch(url).then(res => {
     return res.json()
   }).then(data => {
-    console.log(data)
-    data.articles.slice(0, 6).forEach(article => createNews(article))
+    // filter through the articles and skip the ones with no urlToImage property to be displayed
+    data.articles.filter(article => article.urlToImage).slice(0, 50).forEach(article => createNews(article))
   }).catch(error => {
     console.log(error)
   })
