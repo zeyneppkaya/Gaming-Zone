@@ -32,3 +32,4 @@ function buyButton(text) {
     $buyButton.textContent = text
 }
 
+// Finish
