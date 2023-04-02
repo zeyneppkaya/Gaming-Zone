@@ -33,3 +33,11 @@ function buyButton(text) {
 }
 
 // Finish
+
+//make nav responsive
+const navBar = document.querySelector('.nav-bar')
+const toggleBtn = document.querySelector('.toggle-btn')
+
+toggleBtn.addEventListener('click', function() {
+  navBar.classList.toggle('show')
+})

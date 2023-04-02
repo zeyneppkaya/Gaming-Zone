@@ -151,10 +151,15 @@ input[name="search"] {
   margin-right: auto;
   width: 78%;
   max-width: 1600px;
-  display: flex;
-  /* flex-direction: column; */
   height: 100%;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+}
+
+.picture-container {
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
 .picture-container {
@@ -240,13 +245,14 @@ h3,
   border: none;
 }
 
-.game-container {
-  /* padding-left: 20px; */
-}
+/* .game-container {
+  padding-left: 20px;
+} */
 
 .game-container .minimized-games {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(4, auto);
   
 }
 
@@ -327,4 +333,196 @@ address a:hover {
   font-size: 13px;
   color: #787676;
   margin-bottom: 0;
+}
+
+/* game container */
+.main {
+  margin: 6em 0 6em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1:first-of-type {
+  margin: 3em;
+}
+
+.main h1, .main h2{
+  color: #FFF;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 4em;
+}
+
+.game {
+  background: #323334;
+  width: 25em;
+  padding:2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.game h2 {
+  /* margin-left: 2em; */
+  padding: 1.5em;
+}
+
+.game img{
+  width: 220px;
+  height: auto;
+  margin: auto auto;
+}
+.info {
+  text-align: right;
+}
+
+.info p {
+  color:#FFF;
+}
+
+button.like {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-size: 2em;
+}
+
+button.like:active {
+  color: #ffb4d7;
+}
+
+
+  /* tablet */
+@media (max-width: 920px) {
+  .games-display {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .picture-container,
+  .game-container .minimized-games {
+    grid-column-start: span 1;
+  }
+
+  .game-container .minimized-games {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 2em;
+    margin: 4em 0 4em 0;
+  }
+  .picture-container h4,
+  h3,
+  .price,
+  .ca,
+  .buy-now button {
+    position: absolute;
+  }
+  .picture-container .hl-logo {
+    cursor: pointer;
+    position: absolute;
+    max-width: 30%;
+    top: 30px;
+    left: 10px;
+  }
+  .buy-now button {
+    width: 8em;
+    top: 110px;
+  }
+
+  .picture-container h4 {
+    top: 170px;
+  }
+  
+  
+  h3.description {
+    top: 220px;
+  }
+
+  div.picture-container h3.price {
+    top: 265px;
+  }
+
+  /* game container */
+  .main {
+    margin: 3em 0 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2em;
+  }
+
+  .game {
+   
+    width: 22em;
+    padding: 1em;
+    border-radius: 2em;
+  }
+  
+}
+
+@media (max-width: 414px) {
+  .game-container .minimized-games {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 2em;
+    margin: 4em 0 4em 0;
+  }
+
+  .buy-now button {
+    width: 6em;
+    padding: 0;
+    height: 2em;
+    font-size: 14px;
+    top: 110px;
+  }
+
+  div.picture-container h3.price {
+    top: 130px;
+    font-size: 12px;
+  }
+
+  h4.out-now {
+    display: none;
+  }
+
+  h3.description {
+    display: none;
+  }
+
+   /* game container */
+   .main {
+    margin: 3em 0 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2em;
+  }
+
+  .game {
+    width: 22em;
+    padding: 1em;
+    border-radius: 2em;
+  }
 }

@@ -9,6 +9,7 @@
     <meta name="email" content="kaya0026@algonquinlive.com">
     <title>Gaming Zone</title>
     <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="responsiveNav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
@@ -25,10 +26,10 @@
             <a href="game.html"><img class="game-logo" src="pics/1.jpg" alt="game logo"></a>
             <ol class="nav-bar">
                 <ul class="left">
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="game.html">Store</a></li>
+                    <li><a href="news.html">News</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
                 <ul class="right">
                     <li>
@@ -39,6 +40,7 @@
                     </li>
                 </ul>
             </ol>
+            <button class="toggle-btn">&times;</button>
         </nav>
     </header>
     <main class="main-container">
@@ -65,28 +67,34 @@
             <div class="game-container">
                 <ul class="minimized-games">
                     <div class="mini-hogwarts" onclick="slider('pics/1102284.jpg') ; changer ('pics/hl-logo.png','https://www.hogwartslegacy.com/en-us','Out Now' , 'Take control and be at the center of your own adventure in the wizarding world.'
-                    ,'Starting at CA$79.99') ; logoResizer('400px')">
+                    ,'Starting at CA$79.99') ; logoResizer('200px')">
                         <img style="max-width: 80px; max-height:90px" src="pics/hogwartslogo.jpg" alt="">
                         <h5>Hogwarts Legacy</h5>
                     </div>
                     <div class="mini-fortnite" onclick="  slider('pics/fortnite-poster.jpg') ; changer ('pics/fortnite-logo.png', 'https://www.fortnite.com/' , 'New Season Out!' ,'Become mega in Fortnite Battle royale chapter 4. Ride the grind rails of “Mega City” and swerve on its streets on a sports bike.'
-                    ,'Free To Play') ; logoResizer('330px'); buyButton('Play Now')">
+                    ,'Free To Play') ; logoResizer('165px'); buyButton('Play Now')">
                         <img style="max-height: 100px; " src="pics/fortnite.jpg" alt="">
                         <h5>Fortnite</h5>
                     </div>
                     <div class="mini-valorant" onclick="  slider('pics/valo-poster.jpg') ; changer ('pics/valo.png', 'https://playvalorant.com/en-us/', 'New Act Is Out' ,'Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities.'
-                    ,'Free To Play') ; logoResizer('300px') ; buyButton('Play Now')">
+                    ,'Free To Play') ; logoResizer('150px') ; buyButton('Play Now')">
                         <img style="max-width: 80px; max-height:90px" src="pics/valorant.jpg" alt="">
                         <h5>Valorant</h5>
                     </div>
                     <div class="mini-sonsofforest" onclick="  slider('pics/sons-of-forest.png') ; changer ('pics/sonsofforest-logo.png', 'https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/', 'Out Now' ,'Sent to find a missing billionaire on a remote island, you find yourself in a cannibal-infested hellscape.'
-                    ,'Starting at CA$38.99') ; logoResizer('230px') ; buyButton('Buy Now')">
+                    ,'Starting at CA$38.99') ; logoResizer('115px') ; buyButton('Buy Now')">
                         <img style="max-width: 80px;" src="pics/sonsoftheforest.jpg" alt="">
                         <h5>Sons Of Forest</h5>
                     </div>
                 </ul>
             </div>
         </section>
+    </main>
+    <!-- Christen -->
+    <!-- adds a bit of a game library -->
+    <main class="main">
+        <h1>Best Sellers</h1>
+        <div id="container"></div>
     </main>
     <footer class="footer-container">
         <ul>
@@ -104,6 +112,7 @@
     </footer>
     <script src="localStorage.js"></script>
     <script src="script.js"></script>
+    <script src="gamesCollateralOb.js"></script>
 </body>
 
 </html>
