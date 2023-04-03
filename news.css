@@ -304,6 +304,10 @@ hr {
         align-items: center;
     }
 
+    .search {
+        padding-right: 90px;
+    }
+
     .box {
         width: 60%;
         margin: 0 1% 1% 1%;
@@ -315,11 +319,11 @@ hr {
 
     .drop-down {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 
-    label {
-        padding-right: 15px;
+    label[for='criteria'] {
+        padding-left: 15px;
     }
 
     .news-container {
