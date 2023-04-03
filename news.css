@@ -1,6 +1,6 @@
 * {
     transition: .3s;
-} 
+}
 
 html {
     scroll-behavior: smooth;
@@ -27,8 +27,8 @@ nav {
     display: flex;
     justify-content: space-between;
     /* box-shadow: 0 0 24px rgba(68, 66, 67, 0.5); */
-  }
-  
+}
+
 .game-logo {
     max-width: 80px;
     display: flex;
@@ -43,7 +43,7 @@ nav {
     display: flex;
     float: left;
 }
-  
+
 .right {
     list-style-type: none;
     margin: 0;
@@ -51,11 +51,11 @@ nav {
     display: flex;
     justify-content: flex-end;
 }
-  
+
 nav li {
     display: flex;
 }
-  
+
 nav li a {
     display: block;
     font-size: 18px;
@@ -65,14 +65,14 @@ nav li a {
     text-decoration: none;
     transition: 0.4s;
 }
-  
+
 nav li a:hover {
     color: #A4161A;
     font-size: 20px;
     font-weight: bold;
     transform: scale(1.07);
 }
-  
+
 .nav-bar {
     display: flex;
     align-items: center;
@@ -88,14 +88,33 @@ nav li a:hover {
     height: 100%;
     justify-content: space-between;
     align-items: center;
-} 
+}
 
 .sign_in-out {
     border: transparent;
     background-color: transparent;
     font-size: 18px;
+    font-weight: 700;
     color: #FFF;
     margin: 1em;
+}
+
+input#inOutBtn:hover {
+    color: #A4161A;
+    font-size: 20px;
+    font-weight: bold;
+    transform: scale(1.07);
+}
+
+.material-symbols-outlined {
+    font-size: 1.2rem;
+    padding-right: 20px;
+    color: white;
+}
+
+button.toggle-btn {
+    background-color: #323334;
+    border: none;
 }
 
 input[type=text] {
@@ -111,7 +130,8 @@ input[type=text] {
     color: inherit;
 }
 
-input[type=date], select {
+input[type=date],
+select {
     background: rgb(32, 32, 32);
     border-radius: 24px;
     height: 40px;
@@ -139,9 +159,9 @@ label {
 
 input::placeholder {
     color: white;
-  
+
 }
-  
+
 input[name="search"] {
     color: white;
     padding: 0 20px 0 20px;
@@ -152,11 +172,11 @@ input[name="search"] {
     display: flex;
     align-items: center;
 }
-  
+
 .search img {
     max-width: 20px;
 }
-  
+
 .search button {
     padding: 0 0 0 20px;
     cursor: pointer;
@@ -165,16 +185,16 @@ input[name="search"] {
     position: relative;
     color: rgba(245, 245, 245, 0.6);
 }
-  
+
 .footer-container {
     padding: 20px 0;
     background-color: #323334;
     color: #D3D3D3;
     box-shadow: 0 0 12px rgba(68, 66, 67, 0.5);
-  }
-  
-  .footer-container ul,
-  address {
+}
+
+.footer-container ul,
+address {
     padding: 10px;
     list-style: none;
     text-align: center;
@@ -184,37 +204,37 @@ input[name="search"] {
     margin-bottom: 0;
     display: flex;
     justify-content: center;
-  }
-  
-  .footer-container address {
+}
+
+.footer-container address {
     flex-direction: column;
-  }
-  
-  .footer-container li {
+}
+
+.footer-container li {
     padding: 0 10px;
-  }
-  
-  .footer-container ul a,
-  address,
-  address a {
+}
+
+.footer-container ul a,
+address,
+address a {
     color: inherit;
     text-decoration: none;
     opacity: 0.8;
-  }
-  
-  .footer-container ul a:hover,
-  address:hover,
-  address a:hover {
+}
+
+.footer-container ul a:hover,
+address:hover,
+address a:hover {
     opacity: 1;
-  }
-  
-  .footer-container .copyright {
+}
+
+.footer-container .copyright {
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
     color: #787676;
     margin-bottom: 0;
-  }
+}
 
 .news-container {
     display: grid;
@@ -223,7 +243,7 @@ input[name="search"] {
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; */
-    /* padding: 40px 0; */
+    padding: 40px 0;
 }
 
 .meta {
@@ -257,12 +277,12 @@ a img {
     color: white;
 }
 
- hr {
+hr {
     max-width: 80%;
     opacity: 0.4;
     margin-bottom: 10px;
-  }
-  
+}
+
 .drop-down {
     display: flex;
     flex-flow: column;
@@ -283,6 +303,7 @@ a img {
         justify-content: space-between;
         align-items: center;
     }
+
     .box {
         width: 60%;
         margin: 0 1% 1% 1%;
@@ -292,9 +313,21 @@ a img {
         transition: 0.3s;
     }
 
-    .news-container {
-        display: grid;
-        grid-template-columns: repeat(1, auto);
+    .drop-down {
+        display: flex;
+        flex-direction: row;
     }
-    
+
+    label {
+        padding-right: 15px;
+    }
+
+    .news-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: grid;
+        flex-direction: column;
+    }
+
 }
