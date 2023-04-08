@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
   transition: .3s;
 }
@@ -9,6 +11,7 @@
   font-weight: 700;
   color: #FFF;
   margin: 1em;
+  font-family: 'Poppins', sans-serif;
 }
 
 input#inOutBtn:hover {
@@ -25,7 +28,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Sarabun', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
@@ -121,7 +124,7 @@ main hr {
   justify-content: space-between;
 }
 
-input[type=text] {
+.search-input {
   align-items: center;
   background: rgb(32, 32, 32);
   border-radius: 24px;
@@ -136,7 +139,6 @@ input[type=text] {
 
 input::placeholder {
   color: white;
-
 }
 
 input[name="search"] {
@@ -419,6 +421,18 @@ button.like {
 
 button.like:active {
   color: #ffb4d7;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.socials i {
+  padding-right: 10px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
