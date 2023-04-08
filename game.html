@@ -19,6 +19,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Sarabun:ital,wght@0,400;0,500;0,600;0,800;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
 <body>
@@ -30,12 +31,12 @@
                     <li><a href="game.html">Store</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
                 <ul class="right">
                     <li>
                         <hr>
-                        <form id="in-out" action="sign-in.html">
+                        <form id="in-out" action="signin.html">
                             <input type="submit" id="inOutBtn" class="sign_in-out" value="Sign In">
                         </form>
                     </li>
@@ -47,7 +48,7 @@
     <main class="main-container">
         <section class="search-bar">
             <form class="search" action="">
-                <input type="text" placeholder="Search" name="search">
+                <input class="search-input" type="text" placeholder="Search" name="search">
                 <button type="submit"><img src="pics/search-3-xxl.png" alt=""></button>
             </form>
         </section>
@@ -106,9 +107,13 @@
             <li><a href="#">Privacy Policy</a></li>
         </ul>
         <address id="contact">
-            <h4>1195 Benton Street Kitchener, Ontario <a href="tel://1613748321">+1 613 748 321</a></h4>
             <a href="mailto:gamingzone@gamingzone.ca?subject=Hi Mama's Bakery & body=">gamingzone@gamingzone.ca</a>
         </address>
+        <div class="socials">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-discord"></i>
+        </div>
         <p class="copyright">© 2023, Gaming Zone, Inc. All rights reserved.</p>
     </footer>
     <script src="localStorage.js"></script>

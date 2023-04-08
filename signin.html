@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zeynep Kaya">
+    <meta name="email" content="kaya0026@algonquinlive.com">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="responsiveNav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+</head>
+<!-- This page is made by following Responsive Login and Registration Form tutorial from here https://www.youtube.com/watch?v=U69WL9jInW0 -->
+<body>
+    <header>
+        <nav>
+            <a href="game.html"><img class="game-logo" src="pics/1.jpg" alt="game logo"></a>
+            <ol class="nav-bar">
+                <ul class="left">
+                    <li><a href="game.html">Store</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+                <ul class="right">
+                    <li>
+                      <hr>
+                      <form id="in-out" action="signin.html">
+                        <input type="submit" id="inOutBtn" class="sign_in-out" value="Sign In">
+                      </form>
+                    </li>
+                </ul>
+            </ol>
+            <button class="toggle-btn"><span class="material-symbols-outlined">menu</span></button>
+        </nav>
+    </header>
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+                <img src="pics/5240935.jpg" alt="">
+                <div class="text">
+                    <span class="text-1">Welcome back, <br> let's continue</span>
+                    <span class="text-2">your journey together!</span>
+                </div>
+            </div>
+            <div class="back">
+                <img class="backImg" src="pics/5393979.jpg" alt="">
+                <div class="text">
+                    <span class="text-1">Join our community <br> and embark </span>
+                    <span class="text-2">on a new adventure today!</span>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Login</div>
+                    <form id="signIn" name="signinForm" onsubmit="return validateEmailForm()" method="GET" action="signin.html" >
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input id="email" class="email placeholder" type="text" placeholder="Enter your email">
+                            </div>
+                            <div class="alert" id="mailError"></div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input id="password" class="password placeholder" type="password" placeholder="Enter your password">
+                            </div>
+                            <div class="alert" id="passError"></div>
+                            <div class="text"><a href="#">Forgot password?</a></div>
+                            <div class="button input-box">
+                                <input type="submit" value="Sumbit">
+                            </div>
+                            <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <div class="title">Signup</div>
+                    <form action="signin.html">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-user"></i>
+                                <input class="placeholder" type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input class="placeholder" type="text" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input class="placeholder" type="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="button input-box">
+                                <input class="placeholder" type="submit" value="Sumbit">
+                            </div>
+                            <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <ul>
+            <li><a href="game.html">Home</a></li>
+            <li><a href="about-us.html">Services</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <address id="contact">
+            <a href="mailto:gamingzone@gamingzone.ca?subject=Hi Gaming Zone & body=">gamingzone@gamingzone.ca</a>
+        </address>
+        <div class="socials">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-discord"></i>
+        </div>
+        <p class="copyright">© 2023, Gaming Zone, Inc. All rights reserved.</p>
+    </footer>
+    <script src="localStorage.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
