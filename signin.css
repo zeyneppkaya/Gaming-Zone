@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 * {
+
     font-family: "Poppins", sans-serif;
 }
 
@@ -172,7 +173,7 @@ body {
     border-color: #e82a2a;
 }
 
-.form-content .input-box i {
+.form-content .input-box .fas {
     position: absolute;
     color: #e82a2a;
     font-size: 17px;
@@ -249,11 +250,10 @@ body {
     padding: 10px;
 }
   
-  .socials i {
+  .socials .fab {
     padding-right: 10px;
     cursor: pointer;
 }
-
 
 @media (max-width: 830px) {
     .container {

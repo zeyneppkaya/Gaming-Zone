@@ -114,6 +114,8 @@ form.addEventListener('submit', function (event) {
     if (userEmail) {
         success.textContent = "Thank you for contacting us! We received your message and will contact you soon,  " + userEmail + "!";
         console.log(email);
+    } else if (!userEmail && name == "") {
+        success.textContent = ""
     } else {
         success.textContent = "Thank you for contacting us! We received your message and will contact you soon, " + name + "!";
     }

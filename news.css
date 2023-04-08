@@ -310,7 +310,7 @@ hr {
     padding: 10px;
 }
   
-  .socials i {
+  .socials .fab {
     padding-right: 10px;
     cursor: pointer;
 }
