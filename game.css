@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
   /* transition: .3s; */
   z-index: 0;
@@ -10,6 +12,7 @@
   font-weight: 700;
   color: #FFF;
   margin: 1em;
+  font-family: "Poppins", sans-serif;
 }
 
 input#inOutBtn:hover {
@@ -26,7 +29,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Sarabun', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
@@ -122,7 +125,7 @@ main hr {
   justify-content: space-between;
 }
 
-input[type=text] {
+.search-input {
   align-items: center;
   background: rgb(32, 32, 32);
   border-radius: 24px;
@@ -137,7 +140,6 @@ input[type=text] {
 
 input::placeholder {
   color: white;
-
 }
 
 input[name="search"] {
@@ -403,6 +405,38 @@ h1:first-of-type {
   height: auto;
 }
 
+.info {
+  text-align: right;
+}
+
+.info p {
+  color: #FFF;
+}
+
+button.like {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-size: 2em;
+}
+
+button.like:active {
+  color: #ffb4d7;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.socials .fab {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+
 @media only screen and (max-width: 768px) {
   #container {
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
@@ -540,136 +574,4 @@ h1:first-of-type {
     padding: 1em;
     border-radius: 2em;
   }
-}
-
-.cart {
-  transition: 0ms;
-  left: 71%;
-  top: 15%;
-  position: fixed;
-  border:1px solid white;
-  width: 26%;
-  padding: 10px 20px;
-  color: white;
-  font-family: 'Sarabun';
-  z-index: 1;
-  background-color: black;
-  border-radius: 10px;
-}
-
-.cart-icon {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 3%;
-  z-index: 2;
-}
-
-.cart-icon img {
-  visibility: visible;
-  filter: invert(100%);
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 20%;
-  padding: -0 15px;
-  width: 40px;
-}
-
-
-.cart-icon h2 {
-  font-size: 32px;
-}
-
-.cart-wrapper {
-  overflow-y: auto;
-  max-height: 350px;
-}
-
-.subtotal {
-  text-align: right;
-  padding: 5%;
-}
-
-.clear, .view-cart {
-  width: 95%;
-  text-align: center;
-  cursor: pointer;
-  background-color: #323334;
-  font-size: 32px;
-  margin: 10px auto;
-  padding: 10px 5px;
-}
-
-.view-cart {
-  background-color: white;
-  border: 2px solid #323334;
-  color: #323334;
-}
-
-.cart-item {
-  display: grid;
-  grid-template-columns: 4fr 6fr 1fr;
-  padding: 5% 2%;
-  border-bottom: solid 1px lightgray;
-}
-
-.cart-item img {
-  width: 100%;
-}
-
-.item-info {
-  padding-left: 20%;
-}
-
-.cart-item p {
-  text-align: left;
-}
-
-.cancel img {
-    filter: invert(100%);
-    width: 50%;
-}
-
-.cart-wrapper::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-.cart-wrapper::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px grey; 
-  border-radius: 10px;
-}
-
-/* Handle */
-.cart-wrapper::-webkit-scrollbar-thumb {
-  background: white; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-.cart-wrapper::-webkit-scrollbar-thumb:hover {
-  background: #323334; 
-}
-
-/* Style buy button */
-button.buy {
-
-}
-
-button.buy:active {
-
-}
-
-/* Style info section for the game */
-.info {
-  text-align: right;
-}
-
-.info p {
-  color: #FFF;
-}
-
-.visible {
-  visibility: hidden;
-  border: transparent;
-  background-color: #0B090A;
 }

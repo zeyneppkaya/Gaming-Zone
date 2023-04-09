@@ -67,19 +67,23 @@ function createNews (article) {
   const $meta1 = document.createElement('h3')
   $meta1.classList.add('meta')
   const $meta2 = document.createElement('h3')
-  $meta2.classList.add('meta')
+  $meta2.classList.add('meta2')
   const $desc = document.createElement('p')
   $desc.classList.add('description')
+
+  const $hr = document.createElement('hr')
+  $hr.classList.add('hr')
+
   const $anchor = document.createElement('a')
   $anchor.classList.add('anchor')
   const $img = document.createElement('img')
   $meta1.textContent = `${article.title} by ${article.author}`
-  $meta2.textContent = `Publisher: ${article.source.name} (${article.publishedAt.slice(0, 10)})`
+  $meta2.textContent = `Published by ${article.source.name} (${article.publishedAt.slice(0, 10)})`
   $img.setAttribute('src', article.urlToImage)
   $anchor.appendChild($img)
   $anchor.setAttribute('href', article.url)
   $desc.textContent = article.description
-  $box.append($meta1, $meta2, $anchor, $desc)
+  $box.append($meta1, $anchor, $meta2, $hr ,$desc)
   $news.append($box)
 }
 
