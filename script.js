@@ -25,7 +25,6 @@ renderCart(storedGames)
 const $remove = document.querySelectorAll('.cancel')
 
 // Slides other bakery images when clicked on thumbnails
-<<<<<<< HEAD
 function slider (picture) {
   $gamePoster.src = picture
   $gamePoster.classList.add('.game-pics')
@@ -42,7 +41,7 @@ function changer (logo, href, state, description, price) {
 
 function logoResizer (maxWidth) {
   $gameLogo.style.maxWidth = maxWidth
-=======
+}
 function slider(picture) {
     $gamePoster.src = picture;
     $gamePoster.classList.add('.game-pics')
@@ -59,7 +58,6 @@ function changer(logo, href, state, description, price) {
 
 function logoResizer(maxWidth) {
     $gameLogo.style.maxWidth = maxWidth
->>>>>>> 8fcda4aeac8410460fc401838da34f70e0d1405a
 }
 
 function buyButton (text) {
@@ -149,12 +147,11 @@ function clearCart () {
 const navBar = document.querySelector('.nav-bar')
 const toggleBtn = document.querySelector('.toggle-btn')
 
-<<<<<<< HEAD
-// Cart functionalities --  Juan Camilo Cardona
 toggleBtn.addEventListener('click', function () {
   navBar.classList.toggle('show')
 })
 
+// Cart functionalities --  Juan Camilo Cardona
 $cartbtn.addEventListener('click', function (e) {
   $cart.classList.toggle('visible')
 })
@@ -166,10 +163,6 @@ for (let i = 0; i < games.length; i++) {
 }
 
 $clearCart.addEventListener('click', clearCart)
-=======
-toggleBtn.addEventListener('click', function () {
-    navBar.classList.toggle('show')
-})
 
 // Validate form 
 
@@ -234,21 +227,21 @@ function validateEmailForm() {
 const form = document.getElementById('contactForm');
 const success = document.getElementById('received');
 
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
+if (form) {form.addEventListener('submit', function (event) {
+  event.preventDefault();
 
-    const userEmail = window.localStorage.getItem('email');
-    const name = document.contactForm.name.value;
+  const userEmail = window.localStorage.getItem('email');
+  const name = document.contactForm.name.value;
 
-    if (userEmail) {
-        success.textContent = "Thank you for contacting us! We received your message and will contact you soon,  " + userEmail + "!";
-        console.log(email);
-    } else if (!userEmail && name == "") {
-        success.textContent = ""
-    } else {
-        success.textContent = "Thank you for contacting us! We received your message and will contact you soon, " + name + "!";
-    }
+  if (userEmail) {
+      success.textContent = "Thank you for contacting us! We received your message and will contact you soon,  " + userEmail + "!";
+      console.log(email);
+  } else if (!userEmail && name == "") {
+      success.textContent = ""
+  } else {
+      success.textContent = "Thank you for contacting us! We received your message and will contact you soon, " + name + "!";
+  }
 
-    form.reset();
+  form.reset();
 })
->>>>>>> 8fcda4aeac8410460fc401838da34f70e0d1405a
+}
