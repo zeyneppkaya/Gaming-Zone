@@ -1,5 +1,5 @@
 * {
-  transition: .3s;
+  /* transition: .3s; */
   z-index: 0;
 }
 
@@ -403,25 +403,6 @@ h1:first-of-type {
   height: auto;
 }
 
-.info {
-  text-align: right;
-}
-
-.info p {
-  color: #FFF;
-}
-
-button.like {
-  background-color: transparent;
-  border: none;
-  color: #FFF;
-  font-size: 2em;
-}
-
-button.like:active {
-  color: #ffb4d7;
-}
-
 @media only screen and (max-width: 768px) {
   #container {
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
@@ -562,6 +543,7 @@ button.like:active {
 }
 
 .cart {
+  transition: 0ms;
   left: 71%;
   top: 15%;
   position: fixed;
@@ -579,10 +561,11 @@ button.like:active {
   display: flex;
   justify-content: space-between;
   padding-bottom: 3%;
+  z-index: 2;
 }
 
 .cart-icon img {
-  /* position: fixed; */
+  visibility: visible;
   filter: invert(100%);
   border: 1px solid black;
   background-color: white;
@@ -606,7 +589,7 @@ button.like:active {
   padding: 5%;
 }
 
-.checkout, .view-cart {
+.clear, .view-cart {
   width: 95%;
   text-align: center;
   cursor: pointer;
@@ -665,4 +648,28 @@ button.like:active {
 /* Handle on hover */
 .cart-wrapper::-webkit-scrollbar-thumb:hover {
   background: #323334; 
+}
+
+/* Style buy button */
+button.buy {
+
+}
+
+button.buy:active {
+
+}
+
+/* Style info section for the game */
+.info {
+  text-align: right;
+}
+
+.info p {
+  color: #FFF;
+}
+
+.visible {
+  visibility: hidden;
+  border: transparent;
+  background-color: #0B090A;
 }
