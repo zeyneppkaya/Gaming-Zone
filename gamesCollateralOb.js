@@ -374,7 +374,7 @@ if ($container) {
                 <div class="info">
                     <p>${games[game].genre}</p>
                     <p>${games[game].price}</p>
-                    <button class="buy" type="submit" value="">Buy now</button>
+                    <button class="buy" type="submit" value="submit"><i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
         `)  

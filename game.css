@@ -436,6 +436,20 @@ button.like:active {
   cursor: pointer;
 }
 
+.buy {
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  /* padding: 8px 16px; */
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background: #e5282c;
+  cursor: pointer;
+}
+
+.buy .fas {
+  padding: 10px;
+}
 
 @media only screen and (max-width: 768px) {
   #container {

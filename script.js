@@ -68,7 +68,7 @@ function buyButton (text) {
 function buyGame (e) {
   const game = e.target.closest('.game')
   const data = JSON.parse(game.dataset.info)
-  if (e.target.matches('button')) {
+  if (e.target.matches('i')) {
     $cartWrapper.prepend(createGame(data))
     storedGames.push(data)
     calculatePrice(storedGames)
