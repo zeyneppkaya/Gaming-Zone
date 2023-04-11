@@ -436,6 +436,25 @@ button.like:active {
   cursor: pointer;
 }
 
+.buy {
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background: #e5282c;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy:hover {
+  transform: scale(1.1);
+  background: #a81618;
+}
+
+.buy .fas {
+  padding: 10px;
+}
 
 @media only screen and (max-width: 768px) {
   #container {
@@ -580,14 +599,14 @@ button.like:active {
   left: 71%;
   top: 15%;
   position: fixed;
-  border:1px solid white;
+  border:2px solid white;
   width: 26%;
   padding: 10px 20px;
   color: white;
   font-family: 'Sarabun';
   z-index: 1;
   background-color: black;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .cart-icon {
@@ -599,7 +618,7 @@ button.like:active {
 .cart-icon img {
   /* position: fixed; */
   filter: invert(100%);
-  border: 1px solid black;
+  border: 2px solid black;
   background-color: white;
   border-radius: 20%;
   padding: -0 15px;
@@ -629,12 +648,25 @@ button.like:active {
   font-size: 32px;
   margin: 10px auto;
   padding: 10px 5px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
 .view-cart {
   background-color: white;
-  border: 2px solid #323334;
+  border: 2px solid #2e2e2e;
   color: #323334;
+  transition: 0.3s;
+}
+
+.view-cart:hover{
+  background-color: rgb(214, 214, 214);
+  transform: scale(1.05);
+}
+
+.clear:hover {
+  background-color: #262728;
+  transform: scale(1.05);
 }
 
 .cart-item {
