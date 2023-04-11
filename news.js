@@ -1,3 +1,4 @@
+// News page script -- Juan Camilo Cardona Posada
 const $form = document.querySelector('.search')
 const $input = document.querySelector('[type=text]')
 const $news = document.querySelector('.news-container')

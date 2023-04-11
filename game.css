@@ -595,6 +595,7 @@ button.like:active {
   }
 }
 
+/* Cart styling -- cart container - Juan Camilo Cardona Posada */
 .cart {
   left: 71%;
   top: 15%;
@@ -609,12 +610,14 @@ button.like:active {
   border-radius: 20px;
 }
 
+/* Cart styling -- floating icon container - Juan Camilo Cardona Posada */
 .cart-icon {
   display: flex;
   justify-content: space-between;
   padding-bottom: 3%;
 }
 
+/* Cart styling -- floating icon image - Juan Camilo Cardona Posada */
 .cart-icon img {
   /* position: fixed; */
   filter: invert(100%);
@@ -625,22 +628,25 @@ button.like:active {
   width: 40px;
 }
 
-
+/* Cart styling -- title - Juan Camilo Cardona Posada */
 .cart-icon h2 {
   font-size: 32px;
 }
 
+/* Cart styling -- item wrapper -  Juan Camilo Cardona Posada */
 .cart-wrapper {
   overflow-y: auto;
   max-height: 350px;
 }
 
+/* Cart styling -- subtotal field - Juan Camilo Cardona Posada */
 .subtotal {
   text-align: right;
   padding: 5%;
 }
 
-.clear, .view-cart {
+/* Cart styling -- clear button - Juan Camilo Cardona Posada */
+.clear {
   width: 95%;
   text-align: center;
   cursor: pointer;
@@ -649,26 +655,16 @@ button.like:active {
   margin: 10px auto;
   padding: 10px 5px;
   border-radius: 10px;
-  transition: 0.3s;
-}
-
-.view-cart {
-  background-color: white;
-  border: 2px solid #2e2e2e;
-  color: #323334;
-  transition: 0.3s;
-}
-
-.view-cart:hover{
-  background-color: rgb(214, 214, 214);
-  transform: scale(1.05);
 }
 
 .clear:hover {
   background-color: #262728;
   transform: scale(1.05);
+  transition: 0.3s;
 }
 
+
+/* Cart styling -- cart items - Juan Camilo Cardona Posada */
 .cart-item {
   display: grid;
   grid-template-columns: 4fr 6fr 1fr;
@@ -676,48 +672,58 @@ button.like:active {
   border-bottom: solid 1px lightgray;
 }
 
+
+/* Cart styling -- cart item image - Juan Camilo Cardona Posada */
 .cart-item img {
   width: 100%;
 }
 
+
+/* Cart styling -- cart item info - Juan Camilo Cardona Posada */
 .item-info {
   padding-left: 20%;
 }
 
+/* Cart styling -- cart item p tags - Juan Camilo Cardona Posada */
 .cart-item p {
   text-align: left;
 }
 
+
+/* Cart styling -- cart item remove item - Juan Camilo Cardona Posada */
 .cancel img {
     filter: invert(100%);
     width: 50%;
 }
 
+/* Cart styling -- side scrollbar - Juan Camilo Cardona Posada */
 .cart-wrapper::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
+/* Track - Juan Camilo Cardona Posada*/
 .cart-wrapper::-webkit-scrollbar-track {
   box-shadow: inset 0 0 2px grey; 
   border-radius: 10px;
 }
 
-/* Handle */
+/* Handle - Juan Camilo Cardona Posada*/
 .cart-wrapper::-webkit-scrollbar-thumb {
   background: white; 
   border-radius: 10px;
 }
 
-/* Handle on hover */
+/* Handle on hover - Juan Camilo Cardona Posada*/
 .cart-wrapper::-webkit-scrollbar-thumb:hover {
   background: #323334; 
 }
 
+/* Cart visibility class - Juan Camilo Cardona Posada*/
 .visible {
   visibility: hidden;
 }
 
+/* Cart button: force visible - Juan Camilo Cardona Posada*/
 #cartbtn {
   visibility: visible;
 }

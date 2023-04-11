@@ -20,6 +20,7 @@ const $cartWrapper = document.querySelector('.cart-wrapper')
 const $subtotal = document.querySelector('.subtotal')
 const $clearCart = document.querySelector('.clear')
 
+// Render cart with games stored in local storage --  Juan Camilo Cardona
 renderCart(storedGames)
 
 const $remove = document.querySelectorAll('.cancel')
@@ -75,9 +76,12 @@ function buyGame (e) {
     titles.push(data.name)
     window.localStorage.setItem('cart', JSON.stringify(storedGames))
   }
+  if ($cart.classList.contains('visible')) {
+    $cart.classList.toggle('visible')
+  }
 }
 
-// Add functionality to delete games from cart
+// Add functionality to delete games from cart --  Juan Camilo Cardona
 function removeGame (e) {
   storedGames.splice(titles.indexOf(e.target.dataset.title), 1)
   titles.splice(titles.indexOf(e.target.dataset.title), 1)
@@ -86,7 +90,7 @@ function removeGame (e) {
   renderCart(storedGames)
 }
 
-// render cart when page loads
+// render cart when page loads --  Juan Camilo Cardona
 function renderCart (array) {
   array.forEach(game => {
     $cartWrapper.prepend(createGame(game))
@@ -94,8 +98,7 @@ function renderCart (array) {
   calculatePrice(array)
 }
 
-// calculate subtotal
-
+// calculate subtotal --  Juan Camilo Cardona
 function calculatePrice (array) {
   let subtotal = 0
   $subtotal.textContent = 'Subtotal: $0.00'
@@ -107,8 +110,8 @@ function calculatePrice (array) {
     }
   })
 }
-// Function create game in cart
 
+// Function create game in cart --  Juan Camilo Cardona
 function createGame (game) {
   const $cartItem = document.createElement('div')
   $cartItem.classList.add('cart-item')
@@ -133,8 +136,7 @@ function createGame (game) {
   return $cartItem
 }
 
-// Function to clear cart
-
+// Function to clear cart --  Juan Camilo Cardona
 function clearCart () {
   $cartWrapper.innerHTML = ''
   titles = []
@@ -151,17 +153,18 @@ toggleBtn.addEventListener('click', function () {
   navBar.classList.toggle('show')
 })
 
-// Cart functionalities --  Juan Camilo Cardona
+// Make cart visible --  Juan Camilo Cardona
 $cartbtn.addEventListener('click', function (e) {
   $cart.classList.toggle('visible')
 })
 
+// Add game info into data attribute for each game --  Juan Camilo Cardona
 for (let i = 0; i < games.length; i++) {
-//   console.log(i, games[i])
   $gameItem[i].dataset.info = JSON.stringify(games[i])
   $gameItem[i].addEventListener('click', buyGame)
 }
 
+// Add event listener to clearCart button --  Juan Camilo Cardona
 $clearCart.addEventListener('click', clearCart)
 
 // Validate form 

@@ -120,6 +120,7 @@ button.toggle-btn {
     border: none;
 }
 
+/* News styling -- Juan Camilo Cardona Posada */
 input[type=text] {
     align-items: center;
     background: rgb(32, 32, 32);
@@ -239,6 +240,7 @@ address a:hover {
     margin-bottom: 0;
 }
 
+/* News styling -- Juan Camilo Cardona Posada */
 .news-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -249,6 +251,7 @@ address a:hover {
     padding: 40px 0;
 }
 
+/* News styling -- Juan Camilo Cardona Posada */
 .meta {
     font-size: 19px;
     width: 100%;
@@ -256,17 +259,20 @@ address a:hover {
     color: #443d3d;
 }
 
+/* News styling -- Juan Camilo Cardona Posada */
 .meta2 {
     font-style: italic;
     font-size: 13px;
     color: rgb(135 135 135);
 }
 
+/* News styling -- Juan Camilo Cardona Posada */
 a img {
     width: 100%;
     border-radius: 20px;
 }
 
+/* News styling -- Juan Camilo Cardona Posada */
 .box {
     width: 89%;
     margin: 0 5% 5% 5%;
@@ -277,6 +283,7 @@ a img {
     background: rgb(241 241 241);
 }
 
+/* News styling -- Zeynep Kaya */
 .box:hover {
     /* box-shadow: rgb(233 222 222 / 50%) 4px 4px 6px 0px; */
     /* box-shadow: rgba(248, 245, 245, 0.922) 0px 2px 8px 0px; */
@@ -284,6 +291,7 @@ a img {
     transform: translateY(-5px);
 }
 
+/* News styling -- Juan Camilo Cardona Posada */
 .description {
     text-align: left;
     color: #ab070b;
@@ -296,6 +304,7 @@ hr {
     border: 0.4px solid gray;
 }
 
+/* News styling -- Juan Camilo Cardona Posada */
 .drop-down {
     display: flex;
     flex-flow: column;
