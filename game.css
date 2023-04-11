@@ -727,3 +727,19 @@ button.like:active {
 #cartbtn {
   visibility: visible;
 }
+
+
+
+
+/* christen S */
+
+
+/* keeps cart on the screen on mobile */
+@media  screen and (max-width: 820px) {
+  .cart {
+    left: 45%;
+    top: 10%;
+    width: 40%;
+  }
+}
+

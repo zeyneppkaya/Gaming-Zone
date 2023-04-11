@@ -1,3 +1,5 @@
+// Christen Shubaly
+
 const $signIn = document.getElementById('signIn')
 const $inOutBtn = document.getElementById('in-out')
 const $inOut = document.getElementById('inOutBtn')
