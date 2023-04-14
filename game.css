@@ -46,7 +46,6 @@ nav {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  /* box-shadow: 0 0 24px rgba(68, 66, 67, 0.5); */
 }
 
 .game-logo {

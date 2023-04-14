@@ -1,6 +1,6 @@
 // Functions
 
-// Variables
+// Variables for featured Games display --  Zeynep Kaya
 const $gamePoster = document.querySelector('.game-pics')
 const $gameLogo = document.querySelector('.hl-logo')
 const $gameDescription = document.querySelector('.description')
@@ -25,13 +25,13 @@ renderCart(storedGames)
 
 const $remove = document.querySelectorAll('.cancel')
 
-// Slides other bakery images when clicked on thumbnails
+// Slides images when clicked on thumbnails -- Zeynep Kaya
 function slider (picture) {
   $gamePoster.src = picture
   $gamePoster.classList.add('.game-pics')
 }
 
-// Changes the circle's color everytime picture changes
+// Changes the information of logo href description and price of the game based on the selected feature game -- Zeynep Kaya
 function changer (logo, href, state, description, price) {
   $gameLogo.src = logo
   $gameLink.href = href
@@ -40,27 +40,12 @@ function changer (logo, href, state, description, price) {
   $gamePrice.textContent = price
 }
 
+// Changes the logo size if needed -- Zeynep Kaya
 function logoResizer (maxWidth) {
   $gameLogo.style.maxWidth = maxWidth
 }
-function slider(picture) {
-    $gamePoster.src = picture;
-    $gamePoster.classList.add('.game-pics')
-}
 
-// Changes the circle's color everytime picture changes
-function changer(logo, href, state, description, price) {
-    $gameLogo.src = logo;
-    $gameLink.href = href;
-    $gameState.textContent = state;
-    $gameDescription.textContent = description;
-    $gamePrice.textContent = price;
-}
-
-function logoResizer(maxWidth) {
-    $gameLogo.style.maxWidth = maxWidth
-}
-
+// Changes the buy button depending on whether the game is free or not -- Zeynep Kaya 
 function buyButton (text) {
   $buyButton.textContent = text
 }
@@ -167,27 +152,28 @@ for (let i = 0; i < games.length; i++) {
 // Add event listener to clearCart button --  Juan Camilo Cardona
 $clearCart.addEventListener('click', clearCart)
 
-// Validate form 
-
+// Validate contact us form -- Zeynep Kaya 
 function validateForm() {
     var result = true;
     const name = document.contactForm.name.value;
     const email = document.contactForm.email.value;
     const message = document.contactForm.message.value;
 
-    //validate user name 
+    //validates user name 
     if (name == "") {
         document.querySelector("#nameError").textContent =
             "Please enter a name";
         result = false;
     }
 
+    // Validates Email
     if (!email.includes("@")) {
         document.querySelector("#emailError").textContent =
             "Invalid E-mail format.";
         result = false;
     }
 
+    // Validates Message form
     if (message == "") {
         document.querySelector("#messageError").textContent =
             "Please enter a message.";
@@ -197,17 +183,20 @@ function validateForm() {
     return result;
 }
 
+// Validates Sign in page form -- Zeynep Kaya
 function validateEmailForm() {
     let result = true;
     const signinEmail = document.signinForm.email.value;
     const signinPassword = document.signinForm.password.value;
 
+    // Validates Email format
     if (!signinEmail.includes("@")) {
         document.querySelector('#mailError').textContent =
             "Invalid E-mail format.";
         result = false;
     }
 
+    // Validates password
     if (signinPassword == "") {
         document.querySelector('#passError').textContent =
             "Password cannot be empty.";
@@ -227,6 +216,7 @@ function validateEmailForm() {
     return result;
 }
 
+// Contact us 'message recevied' Message -- Zeynep Kaya
 const form = document.getElementById('contactForm');
 const success = document.getElementById('received');
 
@@ -236,13 +226,17 @@ if (form) {form.addEventListener('submit', function (event) {
   const userEmail = window.localStorage.getItem('email');
   const name = document.contactForm.name.value;
 
+  // If the user is logged in thank you message is regarded to user's email 
   if (userEmail) {
       success.textContent = "Thank you for contacting us! We received your message and will contact you soon,  " + userEmail + "!";
-      console.log(email);
+      console.log(userEmail);
+  // if you user is not logged in nor entered a name nothing will appear 
   } else if (!userEmail && name == "") {
       success.textContent = ""
+  // if you user is not logged in but filled their name in the name section thank you message will be regard to their name. 
   } else {
       success.textContent = "Thank you for contacting us! We received your message and will contact you soon, " + name + "!";
+      console.log('bitti')
   }
 
   form.reset();
