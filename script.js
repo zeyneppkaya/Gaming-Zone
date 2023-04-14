@@ -48,6 +48,7 @@ function validateForm() {
     const name = document.contactForm.name.value;
     const email = document.contactForm.email.value;
     const message = document.contactForm.message.value;
+    const success = document.getElementById('received');
 
     //validates user name 
     if (name == "") {
@@ -115,6 +116,8 @@ if (form) {form.addEventListener('submit', function (event) {
 
   const userEmail = window.localStorage.getItem('email');
   const name = document.contactForm.name.value;
+  const mailE = document.contactForm.email.value;
+  const message =  document.contactForm.message.value;
 
   // If the user is logged in thank you message is regarded to user's email 
   if (userEmail) {
@@ -124,6 +127,8 @@ if (form) {form.addEventListener('submit', function (event) {
   } else if (!userEmail && name == "") {
       success.textContent = ""
   // if you user is not logged in but filled their name in the name section thank you message will be regard to their name. 
+  } else if (!message || !mailE){
+      success.textContent = ""
   } else {
       success.textContent = "Thank you for contacting us! We received your message and will contact you soon, " + name + "!";
       console.log('bitti')
