@@ -102,7 +102,7 @@ hr.divider {
 .left-container .input-box input,
 .left-container .input-box textarea {
     height: 100%;
-    width: 100%;
+    width: 95%;
     border: none;
     outline: none;
     font-size: 16px;
@@ -247,6 +247,7 @@ div#received {
     .contact-us-container {
         margin: 40px;
         height: 100%;
+        width: 68%;
     }
 
     .contact-us-container .content {
