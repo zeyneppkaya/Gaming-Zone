@@ -325,6 +325,10 @@ hr {
 }
 
 @media (max-width: 920px) {
+    body {
+        margin: -3px;
+    }
+
     .search-bar {
         padding: 50px 0 20px 0;
         margin-left: auto;
@@ -368,4 +372,10 @@ hr {
         flex-direction: column;
     }
 
+}
+
+@media (max-width: 405px) {
+    .search {
+        padding-right: 0;
+}
 }
