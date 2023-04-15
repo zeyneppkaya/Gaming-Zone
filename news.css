@@ -243,7 +243,7 @@ address a:hover {
 /* News styling -- Juan Camilo Cardona Posada */
 .news-container {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr 1fr;
 
     /* display: flex;
     flex-wrap: wrap;
